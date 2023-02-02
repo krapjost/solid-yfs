@@ -1,6 +1,6 @@
 {
   "name": "solid-yfs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Synchronize text files between the browser and the file system for solid-js",
   "license": "MIT",
   "repository": "git@github.com:krapjost/solid-yfs.git",
