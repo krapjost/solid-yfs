@@ -2,10 +2,20 @@ import typescript from '@rollup/plugin-typescript';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 
 export default {
-  input: 'src/index.ts',
+  input: './src/index.ts',
   output: {
     format: 'es',
-    dir: 'dist'
+    file: './dist/index.js'
   },
-  plugins: [typescript(), nodeResolve()]
+  external: ['solid-js'],
+  plugins: [
+    typescript({
+      compilerOptions: {
+        outDir: "dist",
+        declaration: true,
+        emitDeclarationOnly: true,
+        declarationDir: "./types"
+      },
+    }),
+    nodeResolve()]
 };

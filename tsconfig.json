@@ -1,17 +1,9 @@
 {
+  "include": ["src"],
+  "exclude": ["node_modules/"],
   "compilerOptions": {
-    "baseUrl": ".",
     "strict": true,
+    "outDir": "dist",
     "declaration": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "module": "ES2020",
-    "moduleResolution": "node",
-    "outDir": "./dist",
-    "target": "ES2020",
-    "allowSyntheticDefaultImports": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-  },
-  "include": ["./src"]
+  }
 }

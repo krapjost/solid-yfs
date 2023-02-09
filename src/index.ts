@@ -1,4 +1,4 @@
-import { onMount, createEffect, createMemo, createSignal } from 'solid-js';
+import { onMount, createEffect, createMemo, createSignal, createRoot } from 'solid-js';
 import { set as idbSet, get as idbGet, del as idbDel } from 'idb-keyval'
 import { STORE_KEY_DIRECTORY_HANDLE } from './constants'
 import {
@@ -162,4 +162,4 @@ const useFileSync = () => {
   }
 }
 
-export default useFileSync
+export default createRoot(useFileSync);

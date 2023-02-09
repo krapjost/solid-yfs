@@ -11,11 +11,10 @@
   },
   "sideEffects": false,
   "type": "module",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
+  "main" : "./dist/index.js",
+  "module": "./dist/index.es.js",
+  "types": "./types/index.d.ts",
+  "files": ["dist", "types"],
   "scripts": {
     "build": "rollup -c",
     "prepublishOnly": "npm run build",

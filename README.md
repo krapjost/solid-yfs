@@ -19,14 +19,14 @@ Blog post explaining the underlying concepts: [Syncing text files between browse
 
 ## Installation
 
-To get started, install the `@yfs/react` package via npm or yarn:
+To get started, install the `solid-yfs` package via npm or yarn:
 
 ```shell
 # npm
-npm install @yfs/react
+npm install solid-yfs
 
 # Yarn
-yarn add @yfs/react
+yarn add solid-yfs
 ```
 
 ## Usage
