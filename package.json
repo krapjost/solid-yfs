@@ -1,6 +1,6 @@
 {
   "name": "solid-yfs",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Synchronize text files between the browser and the file system for solid-js",
   "license": "MIT",
   "repository": "git@github.com:krapjost/solid-yfs.git",
@@ -11,9 +11,11 @@
   },
   "sideEffects": false,
   "type": "module",
-  "main" : "./dist/index.js",
+  "main": "./dist/index.js",
   "types": "./dist/types/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "rollup -c",
     "prepublishOnly": "npm run build",
