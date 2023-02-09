@@ -12,9 +12,8 @@
   "sideEffects": false,
   "type": "module",
   "main" : "./dist/index.js",
-  "module": "./dist/index.es.js",
-  "types": "./types/index.d.ts",
-  "files": ["dist", "types"],
+  "types": "./dist/types/index.d.ts",
+  "files": ["dist"],
   "scripts": {
     "build": "rollup -c",
     "prepublishOnly": "npm run build",
